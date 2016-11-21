@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main_background">
+<!-- 直接使用数组资源给出列表项 -->
+
+<!-- 使用ArrayAdapter提供列表项的 ListView-->
+<ListView 
+    android:id="@+id/mark_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="80dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+   />
+  
+</LinearLayout>

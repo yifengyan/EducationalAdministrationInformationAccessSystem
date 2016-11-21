@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+    
+    <TableRow 
+        android:paddingTop="140dp">
+    <TextView
+        android:textSize="12pt"
+        android:textColor="#ff8888ff"
+        android:id="@+id/lblAccount"
+        android:text="@string/accountName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"/>
+    <!-- 输入账号的EditText控件 -->
+    <EditText
+        android:id="@+id/editAccount"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ref1"
+        android:singleLine="true"
+        android:digits="0123456789"
+        android:inputType="number" >
+        <requestFocus />
+    </EditText>
+ </TableRow>
+
+ <TableRow >
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accountPassword"
+        android:textColor="#ff8888ff"
+        android:textSize="12pt"
+        android:paddingRight="20dp"/>  
+    <!-- 输入密码的EditText控件 -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ref2"
+        android:inputType="textPassword"
+        android:singleLine="true" 
+        />
+ </TableRow>
+
+<!-- RadioButton控件 暂时不予以显示，默认实现的是学生登录，教师登录的模块考虑升级版本再做-->
+<!-- RadioButton控件 -->
+<RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:visibility="gone">
+    <RadioButton
+        android:id="@+id/guide"
+        android:text="@string/student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="12pt"  
+        android:checked="true"
+        android:layout_marginRight="10dp"/>
+    <RadioButton
+        android:id="@+id/visitor"
+        android:text="@string/teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="12pt"
+        android:layout_marginLeft="10dp"/>
+</RadioGroup>
+<LinearLayout
+    android:paddingTop="20dp"
+    android:gravity="center_horizontal">
+    <CheckBox 
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_password"
+        android:textColor="#000"
+        android:textSize="12pt"/>
+    <CheckBox 
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_login"
+        android:textColor="#000"
+        android:textSize="12pt"/>"
+</LinearLayout>
+<LinearLayout
+    android:paddingTop="20dp"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/loginbtn"
+        android:text="@string/user_login" 
+        android:textSize="9pt"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:text="@string/user_reset"
+        android:textSize="9pt"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/> 
+</LinearLayout>
+</TableLayout>

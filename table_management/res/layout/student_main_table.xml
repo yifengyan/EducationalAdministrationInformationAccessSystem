@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background">
+
+    <TableRow 
+        android:layout_marginTop="90dp"
+        android:gravity="center">
+    <Button
+           android:id="@+id/exam_search"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:background="@drawable/examarrengement"
+           android:layout_marginRight="17dp"/>
+    <Button
+        	android:id="@+id/table_search"
+        	android:layout_width="80dp"
+        	android:layout_height="80dp"
+        	android:background="@drawable/table" 
+        	android:layout_marginLeft="17dp"/>
+    </TableRow>、
+    
+    <TableRow 
+        android:gravity="center">
+     <TextView 
+         android:text="@string/exam_information"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="8pt"
+         android:textColor="#000000"
+         android:layout_marginRight="17dp"/>
+     <TextView 
+         android:text="@string/table_search"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="8pt"
+         android:textColor="#000000"
+         android:layout_marginLeft="17dp"/>
+    </TableRow>
+             
+      <TableRow 
+           android:layout_marginTop="5dp"
+           android:gravity="center">
+      <Button
+           android:id="@+id/scores_search"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:background="@drawable/marks"
+           android:layout_marginRight="17dp"/>
+      <Button
+           android:id="@+id/mycard_info"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:background="@drawable/cetmark"
+           android:layout_marginLeft="17dp"/>
+      </TableRow>
+   <TableRow 
+        android:gravity="center">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/Mark_infomation"
+         android:textColor="#000000"
+         android:textSize="8pt" 
+         android:layout_marginRight="17dp"/>
+
+     <TextView 
+         android:text="@string/grademark"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="8pt"
+         android:textColor="#000000"
+         android:layout_marginLeft="17dp"/>
+    </TableRow>
+ 
+      <TableRow 
+           android:layout_marginTop="5dp"
+           android:gravity="center">
+       <Button
+           android:id="@+id/select_class"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:background="@drawable/classroom"
+           android:layout_marginRight="17dp"/>
+       <Button
+           android:id="@+id/campus_info"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:background="@drawable/campusinfo"
+           android:layout_marginLeft="17dp"/>
+       </TableRow>
+   <TableRow 
+ 
+        android:gravity="center">
+     <TextView 
+         android:text="@string/classroom_using"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="8pt"
+         android:textColor="#000000"
+         android:layout_marginRight="17dp"/>
+     <TextView 
+         android:text="@string/school_info"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="8pt"
+         android:textColor="#000000"
+         android:layout_marginLeft="17dp"/>
+    </TableRow>
+    
+</TableLayout>

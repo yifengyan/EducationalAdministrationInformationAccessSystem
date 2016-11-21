@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ujs.edu.lou.table"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Table_managementActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".login"
+            android:label="@string/welcome_name">
+        </activity>
+        <activity 
+            android:name=".Student_main_activity"
+            android:label="@string/student_main_table">
+        </activity>
+        <activity 
+            android:name=".Teacher_main_activity"
+            android:label="@string/teacher_main_table">
+        </activity>
+         <activity 
+            android:name=".Exam_info"
+            android:theme="@style/ListFont"
+            android:label="@string/exam_information">
+        </activity>
+         <activity 
+            android:name=".Exam_in_detail"
+            android:label="@string/exam_information_in_detail">
+        </activity>
+         <activity 
+            android:name=".LevelExam_info"
+            android:theme="@style/ListFont"
+            android:label="@string/grademark">
+        </activity>
+         <activity 
+            android:name=".LevelExam_in_detail"
+            android:label="@string/grademark_detail">
+        </activity>
+        <activity 
+            android:name=".Mark_info"
+            android:theme="@style/ListFont"
+            android:label="@string/Mark_infomation">
+        </activity>
+        <activity 
+            android:name=".Mark_in_detail"
+            android:label="@string/Mark_information_in_detail">
+        </activity>
+         <activity 
+            android:name=".School_infomation"
+            android:theme="@style/ListFont"
+            android:label="@string/school_info">
+        </activity>
+        
+        <activity 
+            android:name="ujs.edu.lou.table.xuefen_info"
+            android:theme="@style/ListFont"
+            android:label="@string/check">
+        </activity>
+        
+        <activity 
+            android:name="ujs.edu.lou.table.xuefen_in_detail"
+            android:label="@string/classroom_using">
+        </activity>
+        
+        <activity 
+            android:name=".kb_info"
+            android:theme="@style/ListFont"
+            android:label="@string/table_search">
+        </activity>
+        
+        <activity 
+            android:name=".kb_details"
+            android:label="@string/kb_in_detail">
+        </activity>
+          
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" ></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>
